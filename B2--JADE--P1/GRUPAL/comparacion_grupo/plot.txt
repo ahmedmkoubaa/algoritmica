@@ -1,0 +1,1 @@
+plot 'burbuja.dat' title 'Burbuja' with lines,plot 'floyd.dat' title 'Floyd' with lines,plot 'hanoi.dat' title 'Hanoi' with lines,plot 'heapsort.dat' title 'Heapsort' with lines,plot 'insercion.dat' title 'Insercion' with lines,plot 'mergesort.dat' title 'Mergesort' with lines,plot 'seleccion.dat' title 'Seleccion' with lines

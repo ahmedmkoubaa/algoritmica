@@ -1,0 +1,60 @@
+
+
+*******************************************************************************
+Mon Mar  9 17:24:18 2020
+
+
+FIT:    data read from 'salida.dat'
+        format = z
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a0*2**x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0           
+   0 4.0297527161e+23   0.00e+00  1.27e+11    1.000000e+00
+   5 7.0234293285e-01  -3.47e-07  1.27e+06    1.973292e-09
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.702343
+rel. change during last iteration : -3.47368e-12
+
+degrees of freedom    (FIT_NDF)                        : 24
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.171068
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0292643
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 1.97329e-09      +/- 2.695e-13    (0.01366%)
+
+
+*******************************************************************************
+Mon Mar  9 21:35:15 2020
+
+
+FIT:    data read from 'salida.dat'
+        format = z
+        #datapoints = 25
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a0*2**x
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0           
+   0 4.0297527161e+23   0.00e+00  1.27e+11    1.000000e+00
+   5 7.0234293285e-01  -3.47e-07  1.27e+06    1.973292e-09
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 0.702343
+rel. change during last iteration : -3.47368e-12
+
+degrees of freedom    (FIT_NDF)                        : 24
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.171068
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0292643
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 1.97329e-09      +/- 2.695e-13    (0.01366%)

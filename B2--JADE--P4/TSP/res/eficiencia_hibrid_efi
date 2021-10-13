@@ -1,0 +1,29 @@
+gnuplot> f(x)=a0*x*x*2**x+a1
+gnuplot> fit f(x) 'tsp_efi.dat' via a0, a1
+iter      chisq       delta/lim  lambda   a0            a1           
+   0 1.2112545123e+03   0.00e+00  2.92e+00   -7.848316e-09   1.000000e+00
+   1 4.0548632006e+00  -2.98e+07  2.92e-01    7.354791e-09   3.493048e-01
+   2 3.5485164457e-01  -1.04e+06  2.92e-02    8.046980e-09  -5.423993e-02
+   3 3.5478084622e-01  -2.00e+01  2.92e-03    8.048607e-09  -5.625779e-02
+   4 3.5478084622e-01  -4.91e-08  2.92e-04    8.048607e-09  -5.625789e-02
+iter      chisq       delta/lim  lambda   a0            a1           
+
+After 4 iterations the fit converged.
+final sum of squares of residuals : 0.354781
+rel. change during last iteration : -4.90834e-13
+
+degrees of freedom    (FIT_NDF)                        : 18
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.140392
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.01971
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 8.04861e-09      +/- 6.613e-11    (0.8217%)
+a1              = -0.0562579       +/- 0.03371      (59.92%)
+
+correlation matrix of the fit parameters:
+                a0     a1     
+a0              1.000 
+a1             -0.364  1.000 
+gnuplot> plot 'tsp_efi.dat' with lines, f(x)
+

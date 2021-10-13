@@ -1,0 +1,30 @@
+gnuplot> g(x)=a0*x*x*x*2**x+a1
+gnuplot> fit g(x) 'tsp_inefi.dat' via a0, a1
+iter      chisq       delta/lim  lambda   a0            a1           
+   0 4.0358300159e+04   0.00e+00  2.81e+01    8.048607e-09  -5.625789e-02
+   1 6.0564379531e+01  -6.65e+07  2.81e+00    1.713833e-08  -5.620711e-02
+   2 3.4036324460e+01  -7.79e+04  2.81e-01    1.737734e-08  -5.440220e-02
+   3 3.3252992154e+01  -2.36e+03  2.81e-02    1.736943e-08   5.420060e-02
+   4 3.2807867028e+01  -1.36e+03  2.81e-03    1.735754e-08   2.160174e-01
+   5 3.2807768185e+01  -3.01e-01  2.81e-04    1.735736e-08   2.184646e-01
+iter      chisq       delta/lim  lambda   a0            a1           
+
+After 5 iterations the fit converged.
+final sum of squares of residuals : 32.8078
+rel. change during last iteration : -3.01278e-06
+
+degrees of freedom    (FIT_NDF)                        : 17
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.3892
+variance of residuals (reduced chisquare) = WSSR/ndf   : 1.92987
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 1.73574e-08      +/- 6.925e-11    (0.399%)
+a1              = 0.218465         +/- 0.342        (156.5%)
+
+correlation matrix of the fit parameters:
+                a0     a1     
+a0              1.000 
+a1             -0.363  1.000 
+gnuplot> plot 'tsp_inefi.dat' with lines, g(x)
+

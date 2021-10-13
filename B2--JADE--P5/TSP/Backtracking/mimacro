@@ -1,0 +1,21 @@
+#!/bin/csh -vx
+echo "" >> salida.dat
+# @ i=3
+# while ($i < 18)
+# ./tsp $i >> salida.dat
+# @ i+=1
+# end
+
+
+./tsp ulysses/ulsysses3.tsp >> salida.dat
+./tsp ulysses/ulsysses4.tsp >> salida.dat
+./tsp ulysses/ulsysses5.tsp >> salida.dat
+./tsp ulysses/ulsysses6.tsp >> salida.dat
+./tsp ulysses/ulsysses7.tsp >> salida.dat
+./tsp ulysses/ulsysses8.tsp >> salida.dat
+./tsp ulysses/ulsysses9.tsp >> salida.dat
+./tsp ulysses/ulsysses10.tsp >> salida.dat
+./tsp ulysses/ulsysses11.tsp >> salida.dat
+./tsp ulysses/ulsysses12.tsp >> salida.dat
+./tsp ulysses/ulsysses13.tsp >> salida.dat
+./tsp ulysses/ulsysses14.tsp >> salida.dat

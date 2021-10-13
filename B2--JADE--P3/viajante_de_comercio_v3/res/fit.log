@@ -1,0 +1,38 @@
+
+
+*******************************************************************************
+Sat Apr 18 00:10:01 2020
+
+
+FIT:    data read from "tsp_b"
+        format = z
+        #datapoints = 14
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a0*x*x+a1*x+a2
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a0            a1            a2           
+   0 2.8952268308e+20   0.00e+00  2.63e+09    1.000000e+00   1.000000e+00   1.000000e+00
+  13 9.0051521451e+00  -4.01e-06  2.63e-04    1.004077e-08   7.529037e-06  -4.706291e-01
+
+After 13 iterations the fit converged.
+final sum of squares of residuals : 9.00515
+rel. change during last iteration : -4.01395e-11
+
+degrees of freedom    (FIT_NDF)                        : 11
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.904793
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.81865
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a0              = 1.00408e-08      +/- 2.981e-10    (2.969%)
+a1              = 7.52904e-06      +/- 3.043e-05    (404.2%)
+a2              = -0.470629        +/- 0.6455       (137.2%)
+
+correlation matrix of the fit parameters:
+                a0     a1     a2     
+a0              1.000 
+a1             -0.965  1.000 
+a2              0.698 -0.834  1.000 
